@@ -7,9 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server.js",
-    "client": "cd .. && react-scripts start"
-
-  },
+    "client": "cd .. && npm install && react-scripts start"
+ },
   "keywords": [],
   "author": "",
   "license": "ISC",
