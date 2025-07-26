@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
+import AddEnquiry from './components/AddEnquiry';
+import ProductList from './components/ProductList';
+import './App.css'; // Import CSS for styling
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <header>
+          <h1>Company Name</h1>
+          <nav>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#enquiry">Add Enquiry</a>
+            <a href="#products">Products</a>
+          </nav>
+        </header>
+        <main>
+          <AboutUs />
+          <ContactUs />
+          <AddEnquiry />
+          <ProductList />
+        </main>
+        <footer>
+          <p>&copy; 2024 Company Name. All rights reserved.</p>
+        </footer>
+      </div>
   );
 }
 
